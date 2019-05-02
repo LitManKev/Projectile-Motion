@@ -4,7 +4,7 @@
 
 float initialvelocity, angle;
 float vix, vfx, cx, t; 
-float viy, vfy, cy, cyy, cyyy ;
+float viy, vfy, cy;
 
 double a= -9.8; 
 double pi = 3.14159265359; 
