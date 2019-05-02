@@ -16,11 +16,11 @@ int main (void){
     printf("What is the angle? ");
     scanf("%f", &angle);
     
-   vix = initialvelocity * cos (angle*pi/180);
-   viy = initialvelocity * sin (angle*pi/180);
-     t = (-viy-viy)/a;
-    cx = vix*t;
-    cy = pow((viy * t) + 0.5  * (a) * t, 2);
+   vix = initialvelocity * cos (angle * pi / 180);
+   viy = initialvelocity * sin (angle * pi / 180);
+     t = (-viy - viy)/a;
+    cx = vix * t;
+    cy = pow((viy * t) + 0.5 * (a) * t, 2);
     
     printf("Velocity X= %.2f meters per second\n", vix);
     printf("Velocity Y= %.2f meters per second\n", viy);
