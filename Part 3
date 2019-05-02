@@ -18,7 +18,7 @@ int main (void){
     
    vix = initialvelocity * cos (angle * pi / 180);
    viy = initialvelocity * sin (angle * pi / 180);
-     t = (-viy - viy)/a;
+     t = (-viy - viy) / a;
     cx = vix * t;
     cy = pow((viy * t) + 0.5 * (a) * t, 2);
     
