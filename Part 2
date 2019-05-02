@@ -1,0 +1,25 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <math.h>
+
+float initialvelocity, angle;
+float vix, vfx, ax, cx, t; 
+float viy, vfy, cy, cyy, cyyy, cyyyy, cyyyyy;
+
+double a= -9.8; 
+double pi = 3.14159265359; 
+
+int main (void){
+   
+    printf("What is the initial velocity? ");
+    scanf("%f", &initialvelocity);
+    printf("What is the angle? ");
+    scanf("%f", &angle);
+    
+   vix = initialvelocity * cos (angle*pi/180);
+   viy = initialvelocity * sin (angle*pi/180);
+     t = (-viy-viy)/a;
+    cx = vix*t;
+
+    printf("%.2f", cy);
+}
