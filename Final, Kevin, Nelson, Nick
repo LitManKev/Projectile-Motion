@@ -5,7 +5,7 @@
 float initialvelocity, angle;
 float vix, vfx, cx, t; 
 float viy, vfy, cy;
-
+double thalf= 0.5;
 double a= -9.8; 
 double pi = 3.14159265359; 
 
@@ -20,7 +20,7 @@ int main (void){
    viy = initialvelocity * sin (angle * pi / 180);
      t = (-viy - viy) / a;
     cx = vix * t;
-    cy = (viy*t*0.5)+(0.5*(-9.8)*(t*0.5*t*0.5));
+    cy = (viy*thalf)+(0.5*(-9.8)*(thalf*thalf));
     
     printf("Velocity X= %.2f meters per second\n", vix);
     printf("Velocity Y= %.2f meters per second\n", viy);
